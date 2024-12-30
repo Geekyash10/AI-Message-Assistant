@@ -1,32 +1,36 @@
-# AI Message Assistant Chrome Extension
+# 🌟 AI Message Assistant Chrome Extension
 
 This Chrome extension helps you send referral requests to recruiters on LinkedIn and apply for internships through Gmail. Upload your resume once, and the extension creates a summary to generate personalized messages. With one click, you can create messages designed for the platform and person you are sending them to. It also saves your last message, so you can reuse it easily without typing again. This tool saves time and makes professional communication simple and effective.
 
-## Features
+---
 
-- **One-Time Resume Processing**: Upload your resume once during setup.
-- **Smart Context Detection**: Automatically detects recipient details from LinkedIn or Gmail.
-- **AI-Powered Messages**: Creates personalized messages using Google's Gemini AI.
-- **Platform Integration**:
-  - Seamlessly integrates with the LinkedIn message composer and gmail compose window.
-- **Easy Message Management**: Preview, edit, and insert generated messages effortlessly.
-- **Save Messages for Future Use**: Save messages for future reference and reuse them anytime.
+## ✨ Features
 
+- **📁 One-Time Resume Processing**: Upload your resume once during setup.
+- **🧠 Smart Context Detection**: Automatically detects recipient details from LinkedIn or Gmail.
+- **🤖 AI-Powered Messages**: Creates personalized messages using Google's Gemini AI.
+- **🔗 Platform Integration**:
+  - Seamlessly integrates with the LinkedIn message composer and Gmail compose window.
+- **📝 Easy Message Management**: Preview, edit, and insert generated messages effortlessly.
+- **💾 Save Messages for Future Use**: Save messages for future reference and reuse them anytime.
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
-- **React**: Used for building the Chrome Extension interface.
-- **Tailwind CSS**: Provides responsive and modern UI styling.
-- **Chrome Extension Manifest V3**: Ensures compatibility with the latest Chrome extension standards.
-- **Chrome Local Storage**: Stores user data such as resume summaries and saved messages.
+- **⚛️ React**: Used for building the Chrome Extension interface.
+- **🎨 Tailwind CSS**: Provides responsive and modern UI styling.
+- **🧩 Chrome Extension Manifest V3**: Ensures compatibility with the latest Chrome extension standards.
+- **📦 Chrome Local Storage**: Stores user data such as resume summaries and saved messages.
 
 ### Backend
-- **Node.js & Express**: Handles API requests and serves backend functionalities.
-- **Google Gemini AI API**: Powers the AI-based personalized message generation.
+- **🟢 Node.js & Express**: Handles API requests and serves backend functionalities.
+- **✨ Google Gemini AI API**: Powers the AI-based personalized message generation.
 
+---
 
-## Installation
+## 📥 Installation
 
 ### Prerequisites
 
@@ -82,7 +86,7 @@ This Chrome extension helps you send referral requests to recruiters on LinkedIn
    - Click "Load unpacked".
    - Select the `extension/build` directory.
 
-## Usage
+## 🚀 Usage
 1. **Initial Setup**:  
    - Click on the extension icon.  
    - Follow the setup wizard.  
@@ -100,7 +104,7 @@ This Chrome extension helps you send referral requests to recruiters on LinkedIn
    - Preview and edit the generated message.  
    - Save the message if needed.  
 
-## Project Structure
+## 🏗️ Project Structure
 
 ```
 AI-Message-Buddy/
@@ -131,16 +135,10 @@ AI-Message-Buddy/
 └── index.html
 
 ```
+## ⚙️ Basic Architecure and data flow
+![!\[alt text\](<E:\chrome extension\model.png>)](model.png)
 
-## Contributing
-
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a Pull Request.
-
-## Troubleshooting
+## 🐛 Troubleshooting
 
 ### Common Issues
 
@@ -149,11 +147,11 @@ AI-Message-Buddy/
 3. **Message generation failed**: Ensure your gemini api key is correct 
 
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙌 Acknowledgments
 
 - Google Gemini AI for message generation.
 - Chrome Extensions documentation.
