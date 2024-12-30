@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "AI Message Assistant",
+  "version": "1.0",
+  "description": "AI-powered message generator for LinkedIn and Gmail",
+  "permissions": ["storage", "activeTab", "scripting","tabs","webNavigation"],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://mail.google.com/*",
+    "http://localhost:5000/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["linkedin.js"]
+    },
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["gmail.js"]
+    }
+  ]
+
+}
