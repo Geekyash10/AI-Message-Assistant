@@ -131,8 +131,8 @@ AI-Message-Buddy/
 │   │   ├── main.jsx
 │   │   └── index.css
 │   └── .eslintrc.js
-├── dist
-└── index.html
+    
+
 
 ```
 ## ⚙️ Basic Architecure and data flow
@@ -143,13 +143,9 @@ AI-Message-Buddy/
 ### Common Issues
 
 1. **Extension not appearing**: Ensure the extension is enabled in Chrome.
-2. **AI button not showing**:  After making changes to any frontend files, ensure that you rebuild the extension and refresh it in Chrome
+2. **If Changes are not reflecting**: After making changes to any frontend files, ensure that you rebuild the extension and refresh it in Chrome
 3. **Message generation failed**: Ensure your gemini api key is correct 
 
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙌 Acknowledgments
 
