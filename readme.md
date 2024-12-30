@@ -7,7 +7,6 @@ This Chrome extension helps you send referral requests to recruiters on LinkedIn
 ## ✨ Features
 
 - **📁 One-Time Resume Processing**: Upload your resume once during setup.
-- **🧠 Smart Context Detection**: Automatically detects recipient details from LinkedIn or Gmail.
 - **🤖 AI-Powered Messages**: Creates personalized messages using Google's Gemini AI.
 - **🔗 Platform Integration**:
   - Seamlessly integrates with the LinkedIn message composer and Gmail compose window.
@@ -42,7 +41,7 @@ This Chrome extension helps you send referral requests to recruiters on LinkedIn
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/Geekyash10/AI-Message-Buddy.git
    cd AI-Message-Buddy/Backend
    ```
 
