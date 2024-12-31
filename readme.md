@@ -41,8 +41,8 @@ This Chrome extension helps you send referral requests to recruiters on LinkedIn
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Geekyash10/AI-Message-Buddy.git
-   cd AI-Message-Buddy/Backend
+   git clone https://github.com/Geekyash10/AI-Message-Assistant.git
+   cd AI-Message-Assistant/Backend
    ```
 
 2. Install dependencies:
@@ -65,7 +65,7 @@ This Chrome extension helps you send referral requests to recruiters on LinkedIn
 
 1. Navigate to the extension directory:
    ```bash
-    cd AI-Message-Buddy/Frontend
+    cd AI-Message-Assistant/Frontend
    ```
 
 2. Install dependencies:
