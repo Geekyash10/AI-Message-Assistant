@@ -101,16 +101,17 @@ async function saveGeneratedResponse(message) {
 
 // Function to handle the AI button click
 async function handleAIClick(event) {
+	event.preventDefault();
 	const button = event.target;
-	const isSaveButton = button.innerHTML === "Save";
 
-	if (isSaveButton) {
+	if (button.innerHTML === "Save") {
 		const composeBox = document.querySelector(COMPOSE_SELECTOR);
 		const lastMessage = composeBox?.innerHTML.replace(/<br>/g, "\n");
 		if (lastMessage) {
 			try {
 				await saveGeneratedResponse(lastMessage);
 				alert("Response saved successfully!");
+				button.innerHTML = "Saved!";
 			} catch (error) {
 				console.error("Error saving response:", error);
 				alert("Failed to save the response. Please try again.");
@@ -118,9 +119,6 @@ async function handleAIClick(event) {
 		}
 		return;
 	}
-
-	button.disabled = true;
-	button.innerHTML = "Generating...";
 
 	try {
 		const context = await extractContext();
@@ -151,15 +149,13 @@ async function handleAIClick(event) {
 		const composeBox = document.querySelector(COMPOSE_SELECTOR);
 		if (composeBox) {
 			composeBox.innerHTML = message.replace(/\n/g, "<br>");
-			button.innerHTML = "Save Response";
+			button.innerHTML = "Save";
 		} else {
 			throw new Error("Compose box not found");
 		}
 	} catch (error) {
 		console.error("Error:", error);
 		alert("Error generating message. Please try again.");
-	} finally {
-		button.disabled = false;
 	}
 }
 
@@ -174,7 +170,8 @@ async function handleUseLastResponseClick() {
 
 		const composeBox = document.querySelector(COMPOSE_SELECTOR);
 		if (composeBox) {
-			composeBox.innerHTML = lastResponse.replace(/\n/g, "<br>");
+			composeBox.innerHTML = await lastResponse.replace(/\n/g, "<br>");
+			alert("Last response inserted successfully!");
 		} else {
 			throw new Error("Compose box not found");
 		}
@@ -193,7 +190,6 @@ function init() {
 			if (!document.querySelector(".ai-gmail-button")) {
 				toolbar.appendChild(createAIButton());
 			}
-
 			const savedResponse = await getLastGeneratedResponse().catch(
 				() => null
 			);

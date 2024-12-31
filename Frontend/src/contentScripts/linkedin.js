@@ -38,6 +38,7 @@ function createUseLastResponseButton() {
 	const button = document.createElement("button");
 	button.innerHTML = "Last Response";
 	button.className = "use-last-response-button";
+	button.type = "button";
 	button.style.cssText = `
     background-color: #0a66c2;
     color: white;
