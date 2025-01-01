@@ -137,6 +137,9 @@ AI-Message-Buddy/
 ## ⚙️ Basic Architecure and data flow
 ![!\[alt text\](<E:\chrome extension\model.png>)](model.png)
 
+## Demo Video
+https://www.loom.com/share/8f7c5f58b13941f7b0b7a820888c93b6?t=129&sid=a55828a4-ce2a-47e7-a4c3-3973fbe226e1
+
 ## 🐛 Troubleshooting
 
 ### Common Issues
